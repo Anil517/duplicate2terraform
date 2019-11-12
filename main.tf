@@ -1,18 +1,15 @@
 provider "google" {
 project     = "lexical-theory-250906"
   region      = "us-central1"
-  zone         = "us-central1-a"
+  
 }
 
 
 resource "google_compute_instance" "default" {
   name         = "testsc"
   machine_type = "n1-standard-1"
+  zone         = "us-central1-a"
   
-  
-
-  tags =[ ]
-
   boot_disk {
     initialize_params {
       image = "ubuntu-os-cloud/ubuntu-1604-lts"
