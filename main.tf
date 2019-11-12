@@ -1,15 +1,15 @@
 provider "google" {
  credentials = "${file("terraformnew1.json")}"
 project     = "lexical-theory-250906"
-  region      = "us-central1"
+  region      = "us-west1"
   
 }
 
 
 resource "google_compute_instance" "default" {
-  name         = "testsc"
+  name         = "testsx"
   machine_type = "n1-standard-1"
-  zone         = "us-central1-a"
+  zone         = "us-west1-a"
   
   boot_disk {
     initialize_params {
