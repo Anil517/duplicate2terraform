@@ -1,7 +1,7 @@
 provider "google" {
  
 project     = "lexical-theory-250906"
-  region      = "us-west1"
+  region      = "us-central1"
   
 }
 
@@ -9,7 +9,7 @@ project     = "lexical-theory-250906"
 resource "google_compute_instance" "default" {
   name         = "testspd"
   machine_type = "n1-standard-1"
-  zone         = "us-west1-a"
+  zone         = "us-central1-a"
   
   boot_disk {
     initialize_params {
