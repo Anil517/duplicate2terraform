@@ -1,5 +1,5 @@
 provider "google" {
- credentials = "${file("terraformnew1.json")}"
+ 
 project     = "lexical-theory-250906"
   region      = "us-west1"
   
@@ -7,7 +7,7 @@ project     = "lexical-theory-250906"
 
 
 resource "google_compute_instance" "default" {
-  name         = "testsx"
+  name         = "testspd"
   machine_type = "n1-standard-1"
   zone         = "us-west1-a"
   
