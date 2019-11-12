@@ -1,4 +1,5 @@
 provider "google" {
+ credentials = "${file("terraformnew1.json")}"
 project     = "lexical-theory-250906"
   region      = "us-central1"
   
